@@ -1,5 +1,7 @@
 #import "MenubarController.h"
 #import "PanelController.h"
+#import <WebKit/WebKit.h>
+
 
 @interface ApplicationDelegate : NSObject <NSApplicationDelegate, PanelControllerDelegate>
 

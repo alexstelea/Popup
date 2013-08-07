@@ -6,10 +6,10 @@
 #define OPEN_DURATION .15
 #define CLOSE_DURATION .1
 
-#define SEARCH_INSET 17
+#define SEARCH_INSET 0
 
-#define POPUP_HEIGHT 122
-#define PANEL_WIDTH 280
+#define POPUP_HEIGHT 500
+#define PANEL_WIDTH 700
 #define MENU_ANIMATION_DURATION .1
 
 #pragma mark -
@@ -233,6 +233,9 @@
     [NSAnimationContext endGrouping];
     
     [panel performSelector:@selector(makeFirstResponder:) withObject:self.searchField afterDelay:openDuration];
+    
+   
+    
 }
 
 - (void)closePanel
