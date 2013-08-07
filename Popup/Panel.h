@@ -6,4 +6,5 @@
     NSURLRequest* request;
 }
 @property (assign) IBOutlet WebView *webview;
+-(IBAction)openInChrome:(id)sender;
 @end

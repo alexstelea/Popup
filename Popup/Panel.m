@@ -4,11 +4,6 @@
 
 @synthesize webview = _webview;
 
-- (BOOL)canBecomeKeyWindow;
-{
-    return YES; // Allow Search field to become the first responder
-}
-
 - (void)awakeFromNib {
     
     NSURL *url = [NSURL URLWithString:@"http://youtube.com/"] ;
@@ -28,17 +23,6 @@
     NSLog(@"%@", combi);
     [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:combi]];
 }
-//-(void)mouseDown:(NSEvent *)theEvent{
-//    NSLog(@"%@", theEvent);
-//    if ([theEvent type] == NSLeftMouseDown)
-//    {
-//        NSLog(@"YAY");
-//        NSMenu *theMenu = [[NSMenu alloc] initWithTitle:@"Contextual Menu"];
-//        [theMenu insertItemWithTitle:@"Beep" action:@selector(beep:) keyEquivalent:@"" atIndex:0];
-//        [theMenu insertItemWithTitle:@"Honk" action:@selector(honk:) keyEquivalent:@"" atIndex:1];
-//        [NSMenu popUpContextMenu:theMenu withEvent:theEvent forView:self.webview];
-//    }
-//}
-//
+
 
 @end
