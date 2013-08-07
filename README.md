@@ -4,10 +4,15 @@ A simple project that extends Popup into a menu bar Youtube player.
 It allows you to listen to Youtube in the background of your Mac as your work.
 
 # Features
+
   -Mobile friendly version (using User Agent hack)
+  
   -Can open YouTube links in the default browser (using default user agent)
+  
   -Forward and back links 
+  
   -Resizable popup view 
+  
   
 
 
